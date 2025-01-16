@@ -33,8 +33,8 @@
                     ?>
                         <tr>
                             <td><?php echo $product['id']; ?></td>
-                            <td><?php echo $product['nom']; ?></td>
-                            <td><?php echo $product['prix']; ?></td>
+                            <td><?php echo $product['name']; ?></td>
+                            <td><?php echo $product['price']; ?></td>
                         </tr>
                     <?php
                 }
@@ -66,8 +66,8 @@
                             ?>
                                 <tr>
                                     <td><?php echo $product['id']; ?></td>
-                                    <td><?php echo $product['nom']; ?></td>
-                                    <td><?php echo $product['prix']; ?></td>
+                                    <td><?php echo $product['name']; ?></td>
+                                    <td><?php echo $product['price']; ?></td>
                                 </tr>
                             <?php
                         }

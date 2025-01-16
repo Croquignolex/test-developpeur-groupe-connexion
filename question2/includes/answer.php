@@ -1,11 +1,11 @@
 <?php
     // Sample products
     $products = [
-        ["id" => "ITEM001", "nom" => "Imprimante laser", "prix" => 387.50],
-        ["id" => "ITEM002", "nom" => "Bureau en bois", "prix" => 1051.99],
-        ["id" => "ITEM003", "nom" => "Ordinateur portable", "prix" => 589.05],
-        ["id" => "ITEM004", "nom" => "Caulculatrice", "prix" => 10.99],
-        ["id" => "ITEM005", "nom" => "Bloc note", "prix" => 8.05],
+        ["id" => 1, "name" => "Imprimante laser", "price" => 387.50],
+        ["id" => 2, "name" => "Bureau en bois", "price" => 1051.99],
+        ["id" => 3, "name" => "Ordinateur portable", "price" => 589.05],
+        ["id" => 4, "name" => "Caulculatrice", "price" => 10.99],
+        ["id" => 5, "name" => "Bloc note", "price" => 8.05],
     ];
 
     // Return most expensive product name
@@ -18,12 +18,12 @@
         $mostExpensiveProduct = $products[0];
 
         foreach ($products as $key => $product) {
-            if ($key > 0 && $product['prix'] > $mostExpensiveProduct['prix']) {
+            if ($key > 0 && $product['price'] > $mostExpensiveProduct['price']) {
                 $mostExpensiveProduct = $product;
             }
         }
 
-        return $mostExpensiveProduct['nom'];
+        return $mostExpensiveProduct['name'];
     }
 
     // Return products cheaper than a given price
@@ -32,7 +32,7 @@
         $filteredProducts = [];
 
         foreach ($products as $product) {
-            if ($product['prix'] < $maxPrice) {
+            if ($product['price'] < $maxPrice) {
                 $filteredProducts[] = $product;
             }
         }
