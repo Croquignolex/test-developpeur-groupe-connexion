@@ -1,0 +1,10 @@
+services:
+  dotnet-core:
+    image: test-gc-dotnet-core-image:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: test_gc_dotnet_core_container
+    restart: unless-stopped
+    ports:
+      - "8001:8080"
