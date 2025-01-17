@@ -1,4 +1,14 @@
-/deploy
+/deploy 
+
 .gitignore
 docker-compose.yml
 Dockerfile
+
+.dockerignore
+/.git
+/.vs
+/.vscode
+/.idea
+
+LICENSE
+README.md
